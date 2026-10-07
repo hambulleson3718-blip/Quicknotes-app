@@ -1,0 +1,155 @@
+/* Box-sizing reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #176b87;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Main area */
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+/* Form */
+#note-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#note-form label {
+    font-weight: bold;
+}
+
+#note-input {
+    flex: 1;
+    min-width: 200px;
+}
+
+#note-input,
+#note-category,
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #176b87;
+    color: white;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #0f4f65;
+}
+
+/* Error message */
+#error-message {
+    color: #c62828;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+/* Search */
+#search-input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Notes list */
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Note cards */
+.note-card {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+/* Category styles */
+.category-personal {
+    border-left: 6px solid teal;
+}
+
+.category-work {
+    border-left: 6px solid darkred;
+}
+
+.category-study {
+    border-left: 6px solid blue;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #note-input,
+    #note-category,
+    #note-form button {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
